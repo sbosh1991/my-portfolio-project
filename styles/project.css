@@ -1,6 +1,6 @@
 :root {
   --main-page-color:#790c5a; 
-  --secondary-page-color:#ffedff; ;
+  --secondary-page-color:#F9F7FD; ;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Raleway", sans-serif;
 }
@@ -28,6 +28,13 @@ p {
   font-family: var(--default-font-family);
   line-height: 30px;
 }
+img{
+    border: 1px solid var(--secondary-page-color);
+    border-radius: 4px;
+    padding: 50px 35px;
+    background: var(--secondary-page-color);
+    width: 85%;
+}
 
 .hero {
  background: var(--secondary-page-color);
@@ -47,6 +54,21 @@ p {
     font-weight: normal;
     line-height: 1,5;
 }
+.about-section h1{
+   font-size: 64px;
+   line-height: 80px;
+}
+.about-section h2{
+    font-size: 25px;
+    font-family: var(--default-font-family);
+}
+.about-section{
+    padding: 160px 20px;
+}
+.about-section-content{
+   margin: 30px;
+}
+
 .btn-branding{
     border-radius: 4px;
     color: white;
@@ -54,4 +76,15 @@ p {
     font-size: 18px;
     padding: 15px 30px;
     line-height: 25px;
+}
+.btn-branding-browse{
+     border-radius: 4px;
+    color: var(--main-page-color);
+    font-size: 18px;
+    padding: 15px 30px;
+    line-height: 25px;
+    border: 1px solid var(--main-page-color);
+}
+.project-description{
+    padding: 120px 60px;
 }
