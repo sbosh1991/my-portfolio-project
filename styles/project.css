@@ -28,7 +28,7 @@ p {
   font-family: var(--default-font-family);
   line-height: 30px;
 }
-img{
+ img{
     border: 1px solid var(--secondary-page-color);
     border-radius: 4px;
     padding: 50px 35px;
@@ -40,11 +40,12 @@ img{
  background: var(--secondary-page-color);
   text-align: center;
   padding: 160px 20px;
+  margin: 20px;
 }
 .hero p{
     font-size: 36px;
     font-weight: bold;
-    margin: 0;
+    margin: 0px;
     color: var(--main-page-color);
 }
 
@@ -67,7 +68,7 @@ img{
     padding: 160px 20px;
 }
 .content{
-   margin: 30px;
+   
    text-align: center;
    padding: 0;
 }
@@ -82,6 +83,9 @@ img{
 .content p{
     font-size: 14px;
     margin: 0;
+}
+.image {
+    border: none;
 }
 
 .btn-branding{
@@ -102,4 +106,34 @@ img{
 }
 .project-description{
     padding: 120px 60px;
+}
+
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 35px;
+    margin-bottom: 55px;
+    line-height: 1;
+  }
+  h2 {
+    font-size: 25px;
+    margin-top: ;
+  }
+  .hero{
+      padding: 30px;
+      margin-top: 55px;
+  }
+
+  .hero p {
+    font-size: 25px;
+    line-height: 1;
+  }
+  .project-description{
+      text-align: center;
+       padding: 0;
+  }
+  .description {
+    padding-left: 0;
+    text-align: center;
+  }
 }
