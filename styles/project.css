@@ -1,8 +1,12 @@
 :root {
-  --main-page-color:#790c5a; 
-  --secondary-page-color:#F9F7FD; ;
+  --main-page-color:#631357; 
+  --secondary-page-color:#f4eeff; 
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Raleway", sans-serif;
+}
+
+body{
+    background-color: #deddfa;
 }
 
 h1,
@@ -23,12 +27,42 @@ h2 {
   font-size: 54px;
   margin-top: 65px;
 }
+
+h4{
+  font-size: 38px;
+}
 p {
   color: var(--main-page-color);
   font-family: var(--default-font-family);
   line-height: 30px;
 }
- img{
+
+nav{
+    padding: 0;
+}
+nav ul{
+    padding-top: 20px;
+    margin: 0;
+
+}
+
+nav li{
+    display: inline;
+    list-style: none;
+    line-height: 45px;
+    margin-left: 15px;
+}
+nav a{
+text-decoration: none;
+color: var(--main-page-color);
+transition: all 150ms ease-in-out;
+}
+
+nav a:hover,nav li.active a{
+    color: #885DF1;  
+}
+
+ .content-container img {
     border: 1px solid var(--secondary-page-color);
     border-radius: 4px;
     padding: 50px 35px;
@@ -39,8 +73,9 @@ p {
 .hero {
  background: var(--secondary-page-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 100px 20px;
   margin: 20px;
+  border-radius:4px ;
 }
 .hero p{
     font-size: 36px;
@@ -84,9 +119,6 @@ p {
     font-size: 14px;
     margin: 0;
 }
-.image {
-    border: none;
-}
 
 .btn-branding{
     border-radius: 4px;
@@ -108,21 +140,71 @@ p {
     padding: 120px 60px;
 }
 
+.logo{
+    max-height: 120px;
+
+}
+footer .email-link{
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+   
+}
+
+footer .email-link:hover{
+    color: var(--main-page-color);
+}
+footer .social-links a:hover{
+  color: var(--secondary-page-color);
+  background: var(--main-page-color);
+}
+
+footer .social-links a{
+  margin: 0 20px;
+  color: var(--main-page-color);
+  background: var(--secondary-page-color);
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 20px;
+  transition: all 100ms ease-in-out;
+}
+
+footer{
+  margin: 60px 0;
+}
+footer .contact-box{
+  background: var(--secondary-page-color);
+  border-radius: 6px;
+  padding: 30px;
+}
 
 @media (max-width: 800px) {
   h1 {
+  
     font-size: 35px;
-    margin-bottom: 55px;
+ margin-bottom: 30px;
+ margin-top: 25px;
     line-height: 1;
+     padding-top: 0;
   }
   h2 {
     font-size: 25px;
-    margin-top: ;
+    margin-top: 25px;
+    line-height: 1.5;
+
+  }
+  .content-container{
+      padding: 0;
+      margin: 5px 10px;
   }
   .hero{
-      padding: 30px;
-      margin-top: 55px;
+      padding: 35px;
+      margin-top: 5px;
+    text-align: center;
   }
+nav ul a{
+  text-align: center;
+}
 
   .hero p {
     font-size: 25px;
