@@ -161,6 +161,7 @@ footer .contact-box{
     font-size: 18px;
     padding: 15px 30px;
     line-height: 25px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 .btn-branding-browse{
      border-radius: 4px;
@@ -169,6 +170,7 @@ footer .contact-box{
     padding: 15px 30px;
     line-height: 25px;
     border: 1px solid var(--main-page-color);
+    box-shadow:  10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 .project-description{
     padding: 120px 60px;
@@ -195,6 +197,7 @@ footer .contact-box{
     line-height: 1.5;
 
   }
+
   .content-container{
       padding: 0;
       margin: 5px 10px;
